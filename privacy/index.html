@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Claimr — Privacy Policy</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font: 16px/1.65 -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    max-width: 720px; margin: 0 auto; padding: 40px 20px 80px; color: #1a1a1a;
+    background: #fff;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e6e6e6; background: #0f1720; }
+    a { color: #46D588; }
+  }
+  h1 { font-size: 1.8rem; margin: 0 0 4px; }
+  h2 { font-size: 1.15rem; margin: 2rem 0 .5rem; }
+  .updated { color: #888; font-size: .9rem; margin-bottom: 2rem; }
+  ul { padding-left: 1.2rem; }
+  li { margin: .35rem 0; }
+  a { color: #12A85A; }
+  code { background: rgba(128,128,128,.15); padding: 1px 5px; border-radius: 4px; }
+</style>
+</head>
+<body>
+  <h1>Claimr — Privacy Policy</h1>
+  <div class="updated">Last updated: 2026-07-19</div>
+
+  <h2>Who we are</h2>
+  <p>Claimr is operated by an individual developer based in Finland.
+  Contact: <a href="mailto:xx.juon@gmail.com">xx.juon@gmail.com</a>.
+  We are the data controller for the data below.</p>
+
+  <h2>What we collect</h2>
+  <ul>
+    <li><strong>Location (precise GPS)</strong> — used solely to compute which map
+      tiles you claim and to verify sessions. Recording runs only while tracking is
+      on (a persistent notification is always shown while recording; you can pause
+      anytime).</li>
+    <li><strong>Step count</strong> — used solely to verify that movement is on foot.</li>
+    <li><strong>Account</strong> — an anonymous account id created automatically on
+      first launch. No name, email, or phone number is required to play.</li>
+    <li><strong>Email address (optional)</strong> — only if you choose to link a
+      Google account to protect your progress. We receive your email address and a
+      Google account identifier from Google, and store them so your territory
+      survives a new device or reinstall. We never receive your Google password, and
+      we do not read your Gmail, contacts, or any other Google data. Linking is
+      entirely optional and the game is fully playable without it.</li>
+    <li><strong>Body weight/height (optional)</strong> — stored on your device only,
+      used to estimate calories. Never transmitted.</li>
+  </ul>
+
+  <h2>How it is stored</h2>
+  <p>Game data is stored on our server (Supabase, EU region — Stockholm): your
+  anonymous account id, chosen battles and teams, claimed tiles, and per-session
+  summaries (distance, duration, verification result).</p>
+  <p>Raw GPS points of a session are deleted immediately after verification.
+  Exceptions, kept strictly for fair-play review:</p>
+  <ul>
+    <li>Sessions <strong>put on hold</strong> by verification keep their raw points
+      for <strong>7 days</strong> — so they can be re-judged in your favor if you
+      appeal or the rules improve — then they are deleted.</li>
+    <li>A coarse route summary (30-second resolution grid cells) is kept for
+      <strong>14 days</strong> solely to detect multi-account abuse, then deleted.</li>
+    <li>A <strong>salted hash</strong> of your connection address (IP) is stored with
+      each session for up to <strong>30 days</strong>, solely to detect multi-account
+      abuse. The raw address itself is never stored.</li>
+    <li>Expired data is deleted automatically every day.</li>
+  </ul>
+
+  <h2>User-created battles</h2>
+  <p>Battle names, team names and colors you create are visible to the people you
+  invite (battles are private by default). Reports you file are stored with your
+  account id for moderation purposes only.</p>
+
+  <h2>What we never do</h2>
+  <ul>
+    <li>We do not sell your data.</li>
+    <li>We do not share your data with third parties, except when required by law
+      (see our Terms of Service).</li>
+    <li>We do not use your location for advertising. The app has no ads.</li>
+  </ul>
+
+  <h2>Your rights (GDPR)</h2>
+  <p>You can access, correct, or erase your data at any time: in-app
+  (Profile → Reset data) or by contacting us. Erasure requests are honored within
+  30 days. You also have the right to lodge a complaint with the Finnish Data
+  Protection Ombudsman (<a href="https://tietosuoja.fi">tietosuoja.fi</a>).</p>
+
+  <h2>Children</h2>
+  <p>Claimr is not directed at children under 13.</p>
+
+  <h2>Changes</h2>
+  <p>Material changes to this policy will be announced in-app.</p>
+</body>
+</html>
