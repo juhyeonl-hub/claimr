@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Claimr — Delete Your Account &amp; Data</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font: 16px/1.65 -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    max-width: 720px; margin: 0 auto; padding: 40px 20px 80px; color: #1a1a1a; background: #fff;
+  }
+  @media (prefers-color-scheme: dark) { body { color: #e6e6e6; background: #0f1720; } a { color: #46D588; } }
+  h1 { font-size: 1.8rem; margin: 0 0 4px; }
+  h2 { font-size: 1.15rem; margin: 2rem 0 .5rem; }
+  .app { color: #888; font-size: .95rem; margin-bottom: 1.5rem; }
+  a { color: #12A85A; }
+  .cta { display: inline-block; margin: 8px 0 4px; padding: 12px 20px; background: #12A85A; color: #fff;
+         border-radius: 8px; text-decoration: none; font-weight: 600; }
+  ul { padding-left: 1.2rem; } li { margin: .35rem 0; }
+  code { background: rgba(128,128,128,.15); padding: 1px 5px; border-radius: 4px; }
+</style>
+</head>
+<body>
+  <h1>Delete your Claimr account &amp; data</h1>
+  <div class="app">App: <strong>Claimr</strong> · Developer: an independent developer based in Finland</div>
+
+  <h2>How to request deletion</h2>
+  <p>Email us and we will delete your Claimr account and all data associated with it:</p>
+  <p><a class="cta" href="mailto:xx.juon@gmail.com?subject=Delete%20my%20Claimr%20account">Email xx.juon@gmail.com</a></p>
+  <p>Please send the request <strong>from the Google account email you linked</strong>, or include your
+  in-app player name (e.g. <code>runner-xxxx</code>, shown on your Profile) so we can find your account.</p>
+
+  <h2>What gets deleted</h2>
+  <ul>
+    <li>Your account and account identifier</li>
+    <li>Chosen teams and battles you joined or created</li>
+    <li>Map tiles you claimed</li>
+    <li>All session records (distance, duration, verification results)</li>
+    <li>Your email address and Google account link, if you linked one</li>
+  </ul>
+
+  <h2>Timing &amp; data retention</h2>
+  <ul>
+    <li>Deletion requests are completed <strong>within 30 days</strong>.</li>
+    <li>Raw GPS traces are already deleted immediately after each session is verified. If a session is on
+      hold, its raw points are kept at most <strong>7 days</strong>; a coarse route summary is kept
+      <strong>14 days</strong> and a salted hash of your IP up to <strong>30 days</strong> — solely to
+      prevent abuse — then deleted automatically.</li>
+    <li>After account deletion, all remaining data is removed.</li>
+  </ul>
+
+  <h2>Prefer to just clear this device?</h2>
+  <p>You can clear the app's local data anytime in the app: <strong>Profile → Reset data</strong>.
+  To remove your data from our servers, use the email request above.</p>
+
+  <p style="margin-top:2rem"><a href="../">← Back to Claimr</a> · <a href="../privacy/">Privacy Policy</a></p>
+</body>
+</html>
