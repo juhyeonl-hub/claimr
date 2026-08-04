@@ -26,7 +26,7 @@
 </head>
 <body>
   <h1>Claimr — Privacy Policy</h1>
-  <div class="updated">Last updated: 2026-07-19</div>
+  <div class="updated">Last updated: 2026-08-04</div>
 
   <h2>Who we are</h2>
   <p>Claimr is operated by an individual developer based in Finland.
@@ -40,21 +40,33 @@
       on (a persistent notification is always shown while recording; you can pause
       anytime).</li>
     <li><strong>Step count</strong> — used solely to verify that movement is on foot.</li>
-    <li><strong>Account</strong> — an anonymous account id created automatically on
-      first launch. No name, email, or phone number is required to play.</li>
-    <li><strong>Email address (optional)</strong> — only if you choose to link a
-      Google account to protect your progress. We receive your email address and a
-      Google account identifier from Google, and store them so your territory
+    <li><strong>Google account (required)</strong> — Claimr requires you to sign in
+      with Google before you can record or view the map. We receive your email address
+      and a Google account identifier from Google, and store them so your territory
       survives a new device or reinstall. We never receive your Google password, and
-      we do not read your Gmail, contacts, or any other Google data. Linking is
-      entirely optional and the game is fully playable without it.</li>
+      we do not read your Gmail, contacts, or any other Google data. Sign-in is
+      required because territory you claim is tied to an account; without it a lost
+      phone or reinstall would permanently lose your progress.</li>
+    <li><strong>Nickname</strong> — the name other players see. You choose it yourself
+      and can change it at any time. It is not taken from your Google account, so your
+      real name and email are never shown to other players.</li>
     <li><strong>Body weight/height (optional)</strong> — stored on your device only,
       used to estimate calories. Never transmitted.</li>
+    <li><strong>Diagnostics</strong> — a small technical health snapshot is attached
+      to each recorded session so we can detect recording failures that you would
+      never notice yourself (the sensor going silent, the background service being
+      killed, uploads piling up). It contains counters and status codes only — for
+      example how many location updates arrived, whether the step sensor was active,
+      your app version, Android version and phone model. <strong>It contains no
+      location coordinates, no name and no email.</strong> If you file a report from
+      inside the app, a slightly longer version (the same snapshot plus the last 8
+      technical events) is attached so we can investigate what you reported.
+      Diagnostics are deleted after <strong>30 days</strong>.</li>
   </ul>
 
   <h2>How it is stored</h2>
   <p>Game data is stored on our server (Supabase, EU region — Stockholm): your
-  anonymous account id, chosen battles and teams, claimed tiles, and per-session
+  account id and email, chosen battles and teams, claimed tiles, and per-session
   summaries (distance, duration, verification result).</p>
   <p>Raw GPS points of a session are deleted immediately after verification.
   Exceptions, kept strictly for fair-play review:</p>
